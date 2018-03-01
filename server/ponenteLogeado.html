@@ -1,0 +1,88 @@
+<div id="ponenteLogeado">
+	<div id="tabsPonente">
+		<ul>
+  			<li><a href="#editarPonente">Editar Ponente</a></li>
+		    <li><a href="#addActividad">Añadir Actividad</a></li>
+  		</ul>
+  		<div id="editarPonente">
+  			<form action="#">
+  				<div>
+					<label for="nombrePonenteLog">Nombre</label>
+					<input type="text" id="nombrePonenteLog" placeholder="Tu nombre aquí" autocomplete='given-name' >
+					<p><i></i></p>
+				</div>
+				<div>
+					<label for="apellidosPonenteLog">Apellidos</label>
+					<input type="text" id="apellidosPonenteLog" placeholder="Tus apellidos aquí" autocomplete='given-name' >
+					<p><i></i></p>
+				</div>
+				<div>
+					<label for="empresaPonenteLog">Empresa</label>
+					<input type="text" id="empresaPonenteLog" placeholder="tu empresa/ organizacion/ instituto" autocomplete='given-name' >
+					<p><i></i></p>
+				</div>
+				<div>
+					<label for="patrocinioPonenteLog">Posibilidad de patrocinio</label>
+					<input type="checkbox" id="patrocinioPonenteLog">
+					<p><i></i></p>
+				</div>
+				<div>
+					<label for="desdePonenteLog">Prefiero ir desde...</label>
+					<input type="text" id="desdePonenteLog" name="from" readonly>
+					<p><i></i></p>
+				</div>
+				<div>
+					<label for="hastaPonenteLog">Hasta...</label>
+					<input type="text" id="hastaPonenteLog" name="to" readonly>
+					<p><i></i></p>
+				</div>
+				<div>
+					<label for="observacionesPonenteLog">Observaciones</label>
+					<textarea name="observaciones" id="observacionesPonenteLog" cols="60" rows="9"></textarea>
+					<p><i></i></p>
+				</div>
+				<button id="botonEditarPefil">Editar</button>
+  			</form>
+  		</div>
+		<div id="addActividad">
+			<form action="#">
+  					<div>
+					<label for="nombreActividad">Nombre de la actividad *</label>
+					<input type="text" id="nombreActividad" placeholder="Nombre de la actividad aquí" autocomplete='given-name' >
+					<p><i></i></p>
+				</div>
+				<div>
+					<label for="descBreveActividad">Descripción breve *</label>
+					<input type="text" id="descBreveActividad" maxlength="100" placeholder="descripción breve de la actividad" autocomplete='given-name' >
+					<p><i></i></p>
+				</div>
+				<div>
+					<label for="descExtensaActividad">Descripción detallada</label>
+					<textarea id="descExtensaActividad" cols="60" rows="9"></textarea>
+					<p><i></i></p>
+				</div>
+				<div>
+					<label for="urlImagenActividad">Url de la imagen *</label>
+					<input type="url" id="urlImagenActividad" placeholder="imagen con extensión png.">
+					<p><i></i></p>
+				</div>
+				<div>
+					<label for="MaterialPonenteActividad">Material requerido por el ponente</label>
+					<textarea id="descExtensaActividad" cols="60" rows="3"></textarea>
+					<p><i></i></p>
+				</div>
+				<div>
+					<label for="MaterialAsistenteActividad">Material requerido por los asistentes</label>
+					<textarea id="descExtensaActividad" cols="60" rows="3"></textarea>
+					<p><i></i></p>
+				</div>
+				<div>
+					<label for="numeroAsistentesActividad">Número de asistentes recomendado</label>
+					<input type="number" id="numeroAsistentesActividad" placeholder="50">
+					<p><i></i></p>
+				</div>
+				<button id="crearActividad">Crear</button>
+  			</form>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/* Estilos propios de la página. */
+@font-face {
+  font-family: roboto;
+  src: local("../fonts/Roboto-Regular-webfont"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.svg#icomoonregular") format("svg"), url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"); }
+@font-face {
+  font-family: sosa;
+  src: local("../fonts/sosa-regular-webfont"), url("../fonts/sosa-regular-webfont.ttf") format("truetype"), url("../fonts/sosa-regular-webfont.woff") format("woff"), url("../fonts/sosa-regular-webfont.svg#icomoonregular") format("svg"), url("../fonts/sosa-regular-webfont.eot?#iefix") format("embedded-opentype"); }
+html, body {
+  min-width: 100%;
+  min-height: 100%;
+  font-family: roboto;
+  background-color: #f7f7f7; }
+
+h1, h2, h3, h4, h5, h6, ul, li {
+  margin: 0;
+  padding: 0; }
+
+#cartel {
+  background-color: #fff !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(50, 50, 50, 0.3)), url("../imgs/cartel.jpg") center no-repeat;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: contain;
+  position: absolute;
+  z-index: 700;
+  overflow: hidden; }
+  #cartel #cartelTitle {
+    position: absolute;
+    text-align: center;
+    min-width: 100%;
+    min-height: 50%;
+    bottom: 0;
+    z-index: 800;
+    font-size: 2.5rem;
+    color: #e3e3e3;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000; }
+
+header {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #2b2b2b;
+  padding: 1%; }
+  header > nav {
+    width: 79%;
+    display: inline-block;
+    text-align: right; }
+    header > nav ul {
+      vertical-align: middle; }
+      header > nav ul li {
+        display: inline-block; }
+        header > nav ul li a {
+          color: white;
+          text-decoration: none;
+          transition: all ease-in-out 0.3s; }
+          header > nav ul li a:hover {
+            color: #b3b3b3; }
+  header > h1 {
+    display: inline-block;
+    width: 20%;
+    color: white;
+    vertical-align: middle; }
+
+main {
+  width: 92%;
+  margin: 1% auto; }
+  main #registroAsistentes h1, main #logPon h1, main #editarPonente h1, main #addActividad h1 {
+    color: black;
+    padding-bottom: 1%;
+    border-bottom: thin solid #e3e3e3;
+    margin-bottom: 1%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+  main #registroAsistentes section, main #logPon section, main #editarPonente section, main #addActividad section {
+    padding: 3%;
+    background-color: #fff;
+    color: #333333;
+    text-align: center;
+    border: thin solid #e3e3e3 !important; }
+    main #registroAsistentes section form, main #logPon section form, main #editarPonente section form, main #addActividad section form {
+      border: thin solid #e3e3e3 !important;
+      border-top: 0px;
+      padding: 1%;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  main #registroAsistentes div, main #logPon div, main #editarPonente div, main #addActividad div {
+    margin: 0.7rem 0; }
+    main #registroAsistentes div label, main #logPon div label, main #editarPonente div label, main #addActividad div label {
+      display: inline-block;
+      width: 9%; }
+    main #registroAsistentes div input, main #registroAsistentes div select, main #registroAsistentes div textarea, main #logPon div input, main #logPon div select, main #logPon div textarea, main #editarPonente div input, main #editarPonente div select, main #editarPonente div textarea, main #addActividad div input, main #addActividad div select, main #addActividad div textarea {
+      border: 0px !important;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+      transition: all 0.3s cubic-bezier(0.1, 0.65, 0.1, 0) !important;
+      width: 20%;
+      border: thin solid #e3e3e3;
+      padding: 5px;
+      font-size: 0.9rem; }
+      main #registroAsistentes div input:hover, main #registroAsistentes div select:hover, main #registroAsistentes div textarea:hover, main #logPon div input:hover, main #logPon div select:hover, main #logPon div textarea:hover, main #editarPonente div input:hover, main #editarPonente div select:hover, main #editarPonente div textarea:hover, main #addActividad div input:hover, main #addActividad div select:hover, main #addActividad div textarea:hover {
+        box-shadow: 0 13px 23px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22) !important; }
+    main #registroAsistentes div p, main #registroAsistentes div #loginError, main #logPon div p, main #logPon div #loginError, main #editarPonente div p, main #editarPonente div #loginError, main #addActividad div p, main #addActividad div #loginError {
+      padding: 0;
+      margin: 0.5% 44.3% 0%;
+      height: 19px;
+      width: 50%;
+      text-align: start; }
+      main #registroAsistentes div p i, main #registroAsistentes div #loginError i, main #logPon div p i, main #logPon div #loginError i, main #editarPonente div p i, main #editarPonente div #loginError i, main #addActividad div p i, main #addActividad div #loginError i {
+        color: red;
+        display: none;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: bold; }
+  main #inicio .cajaPonentes {
+    height: 180px; }
+    main #inicio .cajaPonentes img {
+      width: 7.5rem;
+      border: thin double #e3e3e3;
+      padding: 3px;
+      background: #fff; }
+    main #inicio .cajaPonentes > div {
+      display: inline-block;
+      width: 70%;
+      vertical-align: top;
+      margin: 0.5rem; }
+    main #inicio .cajaPonentes h2 {
+      color: #fff;
+      text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000; }
+    main #inicio .cajaPonentes h4 {
+      font-size: 1.3rem; }
+
+/*Footer */
+footer {
+  width: 88%;
+  margin: 1% auto 0;
+  padding: 2%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  footer div {
+    text-align: center;
+    border-right: thin solid #c3c3c3; }
+  footer #patrocinios {
+    width: 38%; }
+    footer #patrocinios img {
+      width: 21%;
+      margin: 0.3rem; }
+  footer #desarrollo {
+    width: 28%; }
+    footer #desarrollo p {
+      margin: 10% 0 0 0px;
+      padding-left: 1%;
+      font-size: 12px;
+      text-align: left; }
+      footer #desarrollo p a {
+        color: #1E88E5;
+        text-decoration: none;
+        transition: color ease-in 0.4s; }
+        footer #desarrollo p a:hover {
+          color: #ffffff;
+          background: #1E88E5; }
+  footer #contacto {
+    width: 22%;
+    border: 0px;
+    padding-top: 1.2%;
+    margin-right: 3%; }
+    footer #contacto a img {
+      width: 16%;
+      margin: 0 4.3%; }
+
+#ponentes section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end; }
+  #ponentes section .ponente {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+    transition: all 0.3s cubic-bezier(0.1, 0.65, 0.1, 0) !important;
+    background: #fff;
+    text-align: center;
+    width: 32.7%;
+    height: 18.5rem;
+    margin: 0.3%; }
+    #ponentes section .ponente:hover {
+      box-shadow: 0 13px 23px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22) !important; }
+    #ponentes section .ponente .nombrePonente, #ponentes section .ponente .empresaPonente {
+      margin: 2%;
+      padding-top: 1%;
+      border-top: thin solid #e3e3e3; }
+    #ponentes section .ponente .empresaPonente {
+      border: 0px;
+      border-bottom: thin solid #e3e3e3;
+      padding-bottom: 2%; }
+    #ponentes section .ponente .imgPonente {
+      margin: 2% auto;
+      height: 150px;
+      border-radius: 50%;
+      border-bottom: thin solid #e3e3e3; }
+    #ponentes section .ponente .redesPonente {
+      margin-bottom: 3%;
+      text-align: center; }
+      #ponentes section .ponente .redesPonente i {
+        font-family: sosa;
+        font-size: 36px;
+        font-style: normal;
+        margin: 2%;
+        cursor: pointer;
+        transition: all ease-in 0.1s;
+        color: #8a2be2; }
+        #ponentes section .ponente .redesPonente i:hover {
+          font-size: 38px; }
+
+#editarPonente, #addActividad {
+  text-align: center;
+  border: thin solid #e3e3e3; }
+  #editarPonente input, #addActividad input {
+    width: 25% !important; }
+  #editarPonente label, #addActividad label {
+    width: 16% !important; }
+  #editarPonente input[type=checkbox], #addActividad input[type=checkbox] {
+    box-shadow: 0px 0px 0px #fff !important; }
+    #editarPonente input[type=checkbox]:hover, #addActividad input[type=checkbox]:hover {
+      box-shadow: 0px 0px 0px #fff !important; }
+
+#dialogConfirmacion {
+  display: none; }
+
+button[title="Close"] {
+  display: none !important; }
+
+.ui-dialog-titlebar {
+  border: thin solid #e3e3e3 !important; }
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr, .ui-corner-left {
+  border-radius: 0px !important; }
+
+.ui-widget-header {
+  background: #fff;
+  border: 0px; }
+
+.ui-widget.ui-widget-content {
+  border: thin solid #e3e3e3 !important; }
+
+textarea {
+  resize: none; }
+
+/*# sourceMappingURL=style.css.map */
