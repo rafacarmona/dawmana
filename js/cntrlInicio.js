@@ -16,7 +16,7 @@
 			$(element).accordion({collapsible: true, active: false});
 		});
 		//activamos el tooltip.
-		$( "h2" ).tooltip();
+		 $( document ).tooltip();
 	}
 
 	let crearEstructura = function(cajaPadre, ponente){
