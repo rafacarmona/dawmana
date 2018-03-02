@@ -73,6 +73,8 @@ $ponentesLogin = array(
 	"lourdes"=>array("usuario" => "Lourdes", "nombre"=>"Lourdes", "apellidos" => "Magarín Corvillo", "empresa" => "Gran capitán", "patrocinio" => false, "fechaDesde" => "27/09/2018", "fechaHasta" => "25/09/2018", "observaciones" => "Te voy a poner un 10 rafa :D", "password" => "1971aec4e766445d8562d4b1037f56f7")
 );
 
+$carteles = array("server/SYSM1.jpg", "server/SYSM2.jpg",  "server/SYSM3.jpg",  "server/SYSM4.jpg", "server/SYSM5.jpg", "server/SYSM6.jpg", "server/SYSM7.jpg", "server/SYSM8.jpg", "server/SYSM9.jpg");
+
 if(isset($_GET['data'])){
 	print_r(json_encode($ponentes[$_GET['data']]));
 }
@@ -95,5 +97,9 @@ if(isset($_GET['login'])){
 	}else{
 		print_r(json_encode(array("error"=>"nombre de usuario o contraseña incorrectos.")));
 	}
+}
+
+if(isset($_GET['cartel'])){
+	print_r(json_encode($carteles));
 }
 ?>

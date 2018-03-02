@@ -220,6 +220,22 @@ footer {
     #editarPonente input[type=checkbox]:hover, #addActividad input[type=checkbox]:hover {
       box-shadow: 0px 0px 0px #fff !important; }
 
+#sysmana section {
+  display: flex;
+  flex-wrap: wrap; }
+  #sysmana section div {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+    transition: all 0.3s cubic-bezier(0.1, 0.65, 0.1, 0) !important;
+    background: #fff;
+    text-align: center;
+    width: 32.7%;
+    height: 18.5rem;
+    margin: 0.3%; }
+    #sysmana section div:hover {
+      box-shadow: 0 13px 23px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22) !important; }
+    #sysmana section div img {
+      height: 96%; }
+
 #dialogConfirmacion {
   display: none; }
 

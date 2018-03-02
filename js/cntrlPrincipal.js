@@ -37,6 +37,8 @@
  				return initAsistentes();
  			case 'ponentes':
  				return initPonentes();
+ 			case 'sysmana':
+ 				return initSysmanas();
  		}
  	}
 
